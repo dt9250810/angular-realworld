@@ -13,8 +13,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  like(article: Article) {
-    article.likes++;
+  like(article: { likes: number; }) {
+    article.likes += 1; 
   }
 
 }
