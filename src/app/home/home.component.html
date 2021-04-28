@@ -31,7 +31,7 @@
                 <a href="" class="author">{{ x.author }}</a>
                 <span class="date">{{ x.publishDate | date: 'MMMM dd yyyy' }}</span>
               </div>
-              <button class="btn btn-outline-primary btn-sm pull-xs-right">
+              <button class="btn btn-outline-primary btn-sm pull-xs-right" (click)="like(x)">
                 <i class="ion-heart"></i> {{ x.likes }}
               </button>
             </div>
